@@ -1,6 +1,6 @@
 /*
 Link: https://leetcode.com/problems/find-the-duplicate-number/description/
-Method: take ith number and considering it index, maked the indexth number negative. so the for duplicate no, it will already be negative
+Method: take ith number and considering it index, make the indexth number negative. so the for duplicate no, it will already be negative
 Time Complexity: O(n)
 Space Complexity: o(1)
 */
