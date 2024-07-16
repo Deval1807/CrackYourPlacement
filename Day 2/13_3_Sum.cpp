@@ -33,6 +33,8 @@ public:
                     ans.push_back(temp);
                     j++;
                     k--;
+
+                    // check for duplicates
                     while(j<k && arr[j] == arr[j-1]) j++;
                     while(j<k && arr[k]==arr[k+1])k--;
                 }
