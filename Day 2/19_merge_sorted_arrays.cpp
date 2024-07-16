@@ -8,7 +8,7 @@ Space Complexity: O(1)
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        // since both sorted, we can start from the back
+        // since both sorted, we can start from the back and move ahead
         int i = m-1, j = n-1, k = m+n-1;
 
         while(i>=0 && j>=0) {
