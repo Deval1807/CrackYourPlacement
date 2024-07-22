@@ -1,6 +1,6 @@
 /*
 Link: https://www.geeksforgeeks.org/find-the-number-of-islands-using-dfs/
-Method: DFS
+Method: DFS - just visit all the possible direction
 Time Complexity: O(m*n)
 Space Complexity: O(m*n)
 */
@@ -12,8 +12,7 @@ void DFS(vector<vector<int> >& M, int i, int j, int ROW,
     // if i less than 0 or j less than 0 or i greater than
     // ROW-1 or j greater than COL-  or if M[i][j] != 1 then
     // we will simply return
-    if (i < 0 || j < 0 || i > (ROW - 1) || j > (COL - 1)
-        || M[i][j] != 1) {
+    if (i < 0 || j < 0 || i > (ROW - 1) || j > (COL - 1) || M[i][j] != 1) {
         return;
     }
 
@@ -22,16 +21,11 @@ void DFS(vector<vector<int> >& M, int i, int j, int ROW,
         DFS(M, i + 1, j, ROW, COL); // right side traversal
         DFS(M, i - 1, j, ROW, COL); // left side traversal
         DFS(M, i, j + 1, ROW, COL); // upward side traversal
-        DFS(M, i, j - 1, ROW,
-            COL); // downward side traversal
-        DFS(M, i + 1, j + 1, ROW,
-            COL); // upward-right side traversal
-        DFS(M, i - 1, j - 1, ROW,
-            COL); // downward-left side traversal
-        DFS(M, i + 1, j - 1, ROW,
-            COL); // downward-right side traversal
-        DFS(M, i - 1, j + 1, ROW,
-            COL); // upward-left side traversal
+        DFS(M, i, j - 1, ROW, COL); // downward side traversal
+        DFS(M, i + 1, j + 1, ROW, COL); // upward-right side traversal
+        DFS(M, i - 1, j - 1, ROW, COL); // downward-left side traversal
+        DFS(M, i + 1, j - 1, ROW, COL); // downward-right side traversal
+        DFS(M, i - 1, j + 1, ROW, COL); // upward-left side traversal
     }
 }
 
@@ -44,8 +38,7 @@ int countIslands(vector<vector<int> >& M)
         for (int j = 0; j < COL; j++) {
             if (M[i][j] == 1) {
                 count++;
-                DFS(M, i, j, ROW, COL); // traversal starts
-                                        // from current cell
+                DFS(M, i, j, ROW, COL); // traversal starts from current cell
             }
         }
     }
