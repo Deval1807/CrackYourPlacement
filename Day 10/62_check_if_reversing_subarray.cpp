@@ -1,5 +1,5 @@
 /*
-Link: hhttps://www.geeksforgeeks.org/check-reversing-sub-array-make-array-sorted/
+Link: https://www.geeksforgeeks.org/check-reversing-sub-array-make-array-sorted/
 Method: compare the original array with its sorted one and then check the subarray is decreasing or not
 Time Complexity: O(nlogn)
 Space Complexity: o(n)
