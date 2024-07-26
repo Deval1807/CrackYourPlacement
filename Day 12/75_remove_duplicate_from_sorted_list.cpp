@@ -1,9 +1,3 @@
-/*
-Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
-Method: traverse simply and delete
-Time Complexity: O(n)
-Space Complexity: O(1)
-*/
 
 /**
  * Definition for singly-linked list.
