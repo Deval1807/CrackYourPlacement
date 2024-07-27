@@ -1,6 +1,6 @@
 /*
 Link: https://leetcode.com/problems/intersection-of-two-linked-lists/description/
-Method: when you reach end in 1 LL, go to the start of next LL
+Method: when you reach end in 1 linked list, go to the start of next linked list
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
