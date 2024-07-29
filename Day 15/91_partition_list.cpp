@@ -1,6 +1,6 @@
 /*
-Link: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/
-Method: if child, save the next and make the curr->next to child and its end of next to saved next
+Link: https://leetcode.com/problems/partition-list/
+Method: make 2 and combine
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
