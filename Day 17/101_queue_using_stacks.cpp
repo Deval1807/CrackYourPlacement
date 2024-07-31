@@ -1,6 +1,6 @@
 /*
 Link: https://leetcode.com/problems/implement-queue-using-stacks/description/
-Method: Extra array
+Method: 2 stacks
 Time Complexity: 
 Space Complexity: O(n) 
 */
